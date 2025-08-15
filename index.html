@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moscovium</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+ <link rel="icon" type="image/x-icon" href="photo_2025-08-15_01-01-16.jpg">
+</head>
+<body class="bg-black" style="font-family: cursive; " >
+    <div class="w-screen h-24 bg-gray-800 flex items-center" >
+        
+    <a class="flex items-center hover:animate-pulse hover:cursor-pointer" href="https://www.tipeeestream.com/yabosen/donation" target="_blank"">
+    <img src="heart.png" class="scale-75 my-4">
+    <h1 class="text-white align-middle text-5xl">Donate</h1>
+    </a>
+    <div class="ml-auto m-4 scale-75 flex items-center">
+    <a  class="m-4 hover:animate-pulse hover:cursor-pointer" target="_blank" href="https://t.me/Yabosenchan">
+  <img src="telegram.png"  >
+    </a>
+      <a class="m-4 hover:animate-pulse hover:cursor-pointer" target="_blank" href="https://twitch.tv/yabosen56">
+  <img src="twitch.png"  >
+    </a>
+      </a>
+      <a class="m-4 hover:animate-pulse hover:cursor-pointer" target="_blank" href="https://www.tiktok.com/@yabosen56">
+  <img src="tik-tok.png"  >
+    </a>
+          <a class="m-4 hover:animate-pulse hover:cursor-pointer" target="_blank" href="https://www.instagram.com/yabosenfps/">
+  <img src="instagram.png"  >
+    </a>
+  </div>
+    
+    </div>
+<div  style="height: 650px; width: 100%;background-image: url(/photo_2025-08-15_00-56-02.jpg); background-size: 100% 100%;">
+
+    
+        
+        <div class="flex items-center text-center place-self-center" >
+<button id="download" style="margin-top: 330px;" class=" hover:animate-pulse hover:cursor-pointer bg-gray-800 text-white rounded-xl flex items-center text-lg m-4"><img class="m-4" src="down-arrow.png"><p class="m-4"> Download  </p> </button>
+</div>
+ <div class="flex items-center text-center place-self-center" >
+
+<button id="exe" style="margin-top: 30px; visibility: hidden;" class=" hover:animate-pulse hover:cursor-pointer bg-gray-800 text-white rounded-xl flex items-center text-lg m-4"><img class="m-4" src="exe.png"><p class="m-4"> Executable  </p> </button>
+<button id="zip" style="margin-top: 30px;  visibility: hidden;" class=" hover:animate-pulse hover:cursor-pointer bg-gray-800 text-white rounded-xl flex items-center text-lg m-4"><img class="m-4" src="zip.png"><p class="m-4"> Zip  </p> </button>
+ </div>
+
+    </div>
+   
+<script>
+    const download = document.getElementById("download");
+    const exe = document.getElementById("exe");
+    const zip = document.getElementById("zip");
+
+    download.onclick = function () {
+        const isVisible = exe.style.visibility === "visible";
+        exe.style.visibility = isVisible ? "hidden" : "visible";
+        zip.style.visibility = isVisible ? "hidden" : "visible";
+    };
+
+    exe.onclick = function () {
+        window.open("https://www.mediafire.com/file/veghdy4yrf6dlsc/Moscovium.exe/file", "_blank"); 
+    };
+
+    zip.onclick = function () {
+        window.open("https://www.mediafire.com/file/jq2ktb36mr54d7q/Moscovium.7z/file", "_blank"); 
+    };
+    </script>
+ 
+
+</body>
+</html>
