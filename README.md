@@ -1,6 +1,6 @@
 # Moscovium Website
 
-A beautiful Flutter web application for downloading the Moscovium program with customizable themes and social media integration.
+A beautiful Next.js web application for downloading the Moscovium program with customizable themes and social media integration.
 
 ## Features
 
@@ -11,13 +11,15 @@ A beautiful Flutter web application for downloading the Moscovium program with c
 - ⬇️ **Download Button** - Center download button with hover effects
 - ⚙️ **Settings Page** - Easy theme customization and configuration
 - 🔧 **Easy Modification** - Simple config file for updating links
+- 🚀 **Modern Tech Stack** - Built with Next.js 14, TypeScript, and Tailwind CSS
+- ✨ **Smooth Animations** - Powered by Framer Motion
 
 ## Getting Started
 
 ### Prerequisites
 
-- Flutter SDK (3.0.0 or higher)
-- Dart SDK
+- Node.js (18.0 or higher)
+- npm or yarn
 - Web browser for testing
 
 ### Installation
@@ -26,23 +28,27 @@ A beautiful Flutter web application for downloading the Moscovium program with c
 2. Navigate to the project directory
 3. Install dependencies:
    ```bash
-   flutter pub get
+   npm install
+   # or
+   yarn install
    ```
 
 ### Running the Application
 
-1. Start the Flutter web server:
+1. Start the development server:
    ```bash
-   flutter run -d web-server --web-port 8080
+   npm run dev
+   # or
+   yarn dev
    ```
 
-2. Open your browser and navigate to `http://localhost:8080`
+2. Open your browser and navigate to `http://localhost:3000`
 
 ## Customization
 
 ### Adding/Modifying Links
 
-Edit the `lib/config/app_config.dart` file to update:
+Edit the `lib/config/app-config.ts` file to update:
 
 - Social media URLs
 - Download links
@@ -52,23 +58,32 @@ Edit the `lib/config/app_config.dart` file to update:
 
 ### Example Configuration
 
-```dart
+```typescript
 // Update social media links
-static const String facebookUrl = 'https://facebook.com/yourpage';
-static const String twitterUrl = 'https://twitter.com/yourhandle';
+socialMedia: {
+  facebook: 'https://facebook.com/yourpage',
+  twitter: 'https://twitter.com/yourhandle',
+  // ...
+},
 
 // Update download links
-static const String downloadUrl = 'https://yourwebsite.com/download';
+download: {
+  main: 'https://yourwebsite.com/download',
+  // ...
+},
 
 // Update donation links
-static const String donateUrl = 'https://yourwebsite.com/donate';
+donation: {
+  main: 'https://yourwebsite.com/donate',
+  // ...
+}
 ```
 
 ### Adding New Social Media Platforms
 
-1. Add the URL to `app_config.dart`
-2. Add the icon to the `socialIcons` map
-3. Update the `SocialLinks` widget to include the new platform
+1. Add the URL to `app-config.ts`
+2. Import the appropriate icon from `lucide-react`
+3. Update the `SocialLinks` component to include the new platform
 
 ### Theme Customization
 
@@ -89,19 +104,23 @@ Users can switch between dark and light modes and choose their preferred accent 
 ## Project Structure
 
 ```
-lib/
-├── config/
-│   └── app_config.dart          # Configuration file for easy modification
-├── screens/
-│   ├── home_screen.dart         # Main landing page
-│   └── settings_screen.dart     # Theme customization page
-├── theme/
-│   └── app_theme.dart          # Theme definitions
-├── widgets/
-│   ├── donate_button.dart      # Donate button with heart icon
-│   ├── download_button.dart    # Main download button
-│   └── social_links.dart       # Social media links
-└── main.dart                   # App entry point
+├── app/
+│   ├── globals.css             # Global styles and CSS variables
+│   ├── layout.tsx              # Root layout component
+│   ├── page.tsx                # Home page
+│   └── settings/
+│       └── page.tsx            # Settings page
+├── components/
+│   ├── donate-button.tsx       # Donate button with heart icon
+│   ├── download-button.tsx     # Main download button
+│   ├── navigation.tsx          # Bottom navigation
+│   └── social-links.tsx        # Social media links
+├── lib/
+│   ├── config/
+│   │   └── app-config.ts       # Configuration file for easy modification
+│   └── contexts/
+│       └── theme-context.tsx   # Theme context and provider
+└── package.json                # Dependencies and scripts
 ```
 
 ## Features in Detail
@@ -130,14 +149,33 @@ lib/
 To build the web application for production:
 
 ```bash
-flutter build web --release
+npm run build
+# or
+yarn build
 ```
 
-The built files will be in the `build/web` directory and can be deployed to any web server.
+To start the production server:
+
+```bash
+npm start
+# or
+yarn start
+```
+
+The built files will be in the `.next` directory and can be deployed to any hosting platform that supports Node.js.
+
+## Deployment
+
+This Next.js app can be deployed to:
+- **Vercel** (recommended) - Zero-config deployment
+- **Netlify** - Static site generation
+- **AWS Amplify** - Full-stack deployment
+- **Railway** - Simple Node.js hosting
+- Any Node.js hosting provider
 
 ## Browser Support
 
-This Flutter web app supports all modern browsers:
+This Next.js web app supports all modern browsers:
 - Chrome (recommended)
 - Firefox
 - Safari
