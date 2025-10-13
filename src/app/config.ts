@@ -30,7 +30,7 @@ export const siteConfig: SiteConfig = {
     },
     {
       name: "Shit",
-      href: "https://v0-yabosen-snowy-social-links.vercel.app/",
+      href: "https://yabosen.live/",
       icon: MessageSquare,
     },
   ],
