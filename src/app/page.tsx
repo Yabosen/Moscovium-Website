@@ -103,7 +103,7 @@ export default function Home() {
       <main className="relative z-10 flex-grow flex flex-col items-center justify-center text-center p-4">
         
         <p style={{ animationDelay: '500ms' }} className="mt-4 max-w-xl mx-auto text-foreground/70 md:text-lg animate-fade-in-up">
-          A sophisticated application for modern digital creators.
+         Moscovium is a lightweight optimization tool that debloats Windows, removes unnecessary background processes, and applies performance tweaks for a smoother, faster experience.
         </p>
 
         <div style={{ animationDelay: '700ms' }} className="mt-8 animate-pop-in">
