@@ -19,13 +19,13 @@ type SiteConfig = {
 export const siteConfig: SiteConfig = {
   socialLinks: [
     {
-      name: "Twitter",
-      href: "#",
+      name: "Discord",
+      href: "https://discord.gg/RTdYYVenKD",
       icon: Twitter,
     },
     {
       name: "GitHub",
-      href: "#",
+      href: "https://github.com/Yabosen",
       icon: Github,
     },
     {
@@ -35,6 +35,6 @@ export const siteConfig: SiteConfig = {
     },
   ],
   downloadLink: "https://pixeldrain.com/u/LwoeEj3r",
-  donationLink: "#",
+  donationLink: "https://www.tipeeestream.com/yabosen/donation",
   backgroundUrl: "",
 };
