@@ -38,6 +38,8 @@ const nextConfig: NextConfig = {
         destination: 'https://discord.gg/DgavuHSaWA',  // your Discord link
         permanent: true,          // false = temporary redirect (307), true = permanent (308)
       },
+         ];
+  },
 };
 
 export default nextConfig;
