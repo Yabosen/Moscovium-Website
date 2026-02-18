@@ -25,7 +25,7 @@ export const siteConfig: SiteConfig = {
     },
     {
       name: "GitHub",
-      href: "https://github.com/Yabosen",
+      href: "https://github.com/Moscoviumdebloat",
       icon: Github,
     },
     {
