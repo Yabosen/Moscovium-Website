@@ -34,7 +34,7 @@ export const siteConfig: SiteConfig = {
       icon: MessageSquare,
     },
   ],
-  downloadLink: "https://github.com/Moscoviumdebloat/Moscovium/releases/tag/3.0.0.0",
+  downloadLink: "https://github.com/Moscoviumdebloat/Moscovium/releases/tag/v3.0.1",
   donationLink: "https://www.tipeeestream.com/yabosen/donation",
   backgroundUrl: "",
 };
