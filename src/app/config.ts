@@ -36,5 +36,5 @@ export const siteConfig: SiteConfig = {
   ],
   downloadLink: "https://github.com/Yabosen/MoscoviumDownload/releases/tag/v2.2",
   donationLink: "https://www.tipeeestream.com/yabosen/donation",
-  backgroundUrl: "",
+  backgroundUrl: "/Illustration.gif",
 };
